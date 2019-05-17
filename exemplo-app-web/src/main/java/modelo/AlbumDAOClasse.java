@@ -14,11 +14,11 @@ public class AlbumDAOClasse implements AlbumDAO {
     }
 
     public static AlbumDAO getInstance() {
-        synchronized (instance) {
+       // synchronized (instance) {
             if (instance == null) {
                 instance = new AlbumDAOClasse();
             }
-        }
+        //}
         return instance;
     }
 
